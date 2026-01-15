@@ -1,9 +1,10 @@
 import React from 'react'
+import PersonalBio from './Project/PersonalBio'
 
 const App = () => {
   return (
     <div>
-      <h1>App</h1>
+      <PersonalBio />
     </div>
   )
 }
