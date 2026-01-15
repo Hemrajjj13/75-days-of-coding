@@ -32,6 +32,7 @@ const ColorSwitcher = () => {
         justifyContent: "center",
         flexDirection:'column'
     }}>
+        <h1>Color Switcher</h1>
         <div id='color-div' style={{
             height: "150px",
             width: "200px",
