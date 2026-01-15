@@ -1,0 +1,30 @@
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.card {
+  padding: 10px;
+  border: 2px solid black;
+  /* height: 200px; */
+  width: 150px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Square image with rounded corners */
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;     /* makes image square */
+  object-fit: cover;      /* prevents stretching */
+  border-radius: 8px;
+  margin-bottom: 8px;
+}

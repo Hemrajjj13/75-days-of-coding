@@ -1,10 +1,11 @@
-import React, { use } from 'react'
+// import React, { use } from 'react'
 import Welcome from './components/Welcome'
 import User from './components/User'
 import Card from './components/Card'
 import Button from './components/Button'
 import Profile from './components/Profile'
 import profiles from './assets/Profiles.js'
+import Catalog from './components/Interactive Product Catalog/Catalog.jsx'
 
 const App = () => {
   function handleClick() {
@@ -12,7 +13,8 @@ const App = () => {
   }
   return (
     <div>
-      <Welcome />
+    <Catalog />
+      {/* <Welcome />
       <User 
         name = "Hemraj"
         role = "Devloper"
@@ -34,8 +36,8 @@ const App = () => {
               skills={user.skills}
               isActive={user.isActive}
             />
-        )}
-      </div>
+        )} */}
+      {/* </div> */}
 
     </div>
   );
