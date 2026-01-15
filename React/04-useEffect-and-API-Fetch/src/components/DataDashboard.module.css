@@ -1,0 +1,14 @@
+.container {
+    background-color: #333;
+    color: whitesmoke;
+    height: auto;
+    width: 100vw;
+    align-items: center;
+    overflow: hidden;
+}
+
+.select {
+    margin: 10px;
+    border: #e90101 5px solid;
+    padding: 5px 10px;
+}
