@@ -1,0 +1,156 @@
+/* PAGE LAYOUT */
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #eef2f3, #d9e2ec);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* FORM CARD */
+.form {
+  background: #ffffff;
+  width: 360px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+}
+
+/* FORM TITLE */
+.title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #222;
+}
+
+/* LABELS */
+.form label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: #444;
+}
+
+/* INPUTS */
+.input {
+  padding: 0.65rem 0.75rem;
+  margin-bottom: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 0.95rem;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* ERROR TEXT */
+.error {
+  color: #dc2626;
+  font-size: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+/* SUBMIT BUTTON */
+.button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s, box-shadow 0.1s;
+}
+
+.button:hover {
+  background: #2563eb;
+}
+
+.button:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) inset;
+}
+
+/* SUCCESS CARD */
+.successCard {
+  background: #ffffff;
+  width: 380px;
+  padding: 2.2rem;
+  border-radius: 14px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* SUCCESS TITLE */
+.successTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+/* SUCCESS TEXT */
+.successText {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #4b5563;
+  margin-bottom: 1.8rem;
+}
+
+/* ACTION BUTTONS */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+/* SECONDARY BUTTONS */
+.secondaryBtn {
+  padding: 0.6rem 1.1rem;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.secondaryBtn:hover {
+  background: #e2e8f0;
+}
+
+.secondaryBtn:active {
+  transform: translateY(1px);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 420px) {
+  .form,
+  .successCard {
+    width: 90%;
+  }
+}
