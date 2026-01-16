@@ -1,16 +1,45 @@
-# React + Vite
+# 🚀 GitHub Open-Source Opportunity Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web application that helps developers discover **open-source issues labeled “good first issue”** across GitHub repositories, filtered by programming language. This tool is especially useful for **beginners looking to contribute to open source** and gain real-world experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Demo
 
-## React Compiler
+- **Live App:** https://75-days-of-coding.vercel.app/
+- **Source Code:** https://github.com/Hemrajjj13/75-days-of-coding/tree/main/React/04-GitHub-open-source-opportunity-finder
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📌 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔍 Search GitHub issues with the label **`good first issue`**
+- 🧑‍💻 Filter issues by programming language:
+  - JavaScript
+  - Java
+  - Python
+  - Go
+  - TypeScript
+- 📄 Displays:
+  - Repository name
+  - Issue title
+  - Direct link to the issue
+- ⚡ Fetches the latest open issues sorted by recent updates
+- 🛡️ Handles loading and error states gracefully
+- 🎨 Clean UI using CSS Modules
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React (Hooks)
+- **Styling:** CSS Modules
+- **API:** GitHub Search Issues API
+- **Deployment:** Vercel
+
+---
+
+## 🧠 How It Works
+
+1. User selects a programming language.
+2. App builds a GitHub search query:
