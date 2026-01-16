@@ -43,3 +43,9 @@ A React-based web application that helps developers discover **open-source issue
 
 1. User selects a programming language.
 2. App builds a GitHub search query:
+  label:"good first issue" language:<selected_language> state:open
+3. Data is fetched from:
+  https://api.github.com/search/issues
+
+4. The top 10 most recently updated issues are displayed.
+5. Each issue includes a direct link to GitHub for contribution.
