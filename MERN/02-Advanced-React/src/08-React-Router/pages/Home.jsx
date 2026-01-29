@@ -11,6 +11,7 @@ const Home = () => {
             <Link to="/home" style={{padding: "10px"}}>Home</Link>
             <Link to="/about" style={{padding: "10px"}}>About </Link>
             <Link to="/contact" style={{padding: "10px"}}>Contact </Link>
+            <Link to="/display" style={{padding: "10px" }} >Display</Link>
         </nav>
         {/* <h3>{id}</h3> */}
 
